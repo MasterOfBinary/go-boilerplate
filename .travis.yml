@@ -7,7 +7,7 @@ go:
  - 1.12.x
 
 install:
- - go get -t ./...
+ - go get -t -v github.com/MasterOfBinary/go-boilerplate
 
 script:
  - go test -v -race -coverprofile=coverage.txt -covermode=atomic -coverpkg=./... ./...
