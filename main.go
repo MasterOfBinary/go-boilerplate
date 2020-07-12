@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"MasterOfBinary/go-boilerplate/hello"
+	"github.com/MasterOfBinary/go-boilerplate/hello"
 )
 
 func main() {

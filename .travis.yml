@@ -7,13 +7,13 @@ go:
  - 1.12.x
 
 install:
- - go get -t -v github.com/MasterOfBinary/go-boilerplate
+ - go get -t -v ./...
 
 script:
  - go test -v -race -coverprofile=coverage.txt -covermode=atomic -coverpkg=./... ./...
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+ - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email: false
