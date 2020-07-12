@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - v*
-    branches:
-      - master
   pull_request:
 jobs:
   golangci:
@@ -13,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          path: ./src/github.com/${{ github.repository }}
+          path: ${{ GOPATH }}/src/github.com/${{ github.repository }}
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v1
         with:
