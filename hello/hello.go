@@ -1,9 +1,5 @@
 package hello
 
-func unusedCode() {
-	_ = 1
-}
-
 // Hello returns a friendly hello string:
 //
 //    Hello world!
